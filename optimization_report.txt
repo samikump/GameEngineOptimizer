@@ -1,0 +1,63 @@
+============================================================
+   SIX DICE COLOR YAHTZEE - ADVANCED OPTIMIZATION REPORT
+   VERSION: 2.9 (Deep Monte Carlo Analysis)
+============================================================
+
+--- Strategy Performance Analysis ---
+Strategy: OPTIMIZED_VALIDATION | Avg:  554,05 | Max: 1199 | SD: 90,63
+Strategy: HYBRID_PRIORITY      | Avg:  549,60 | Max: 1104 | SD: 88,00
+Strategy: COLOR_PRIORITY       | Avg:  547,93 | Max: 1246 | SD: 88,87
+Strategy: GAMBLE               | Avg:  547,74 | Max: 1107 | SD: 89,55
+Strategy: UPPER_PRIORITY       | Avg:  542,15 | Max: 1067 | SD: 87,20
+Strategy: BALANCED             | Avg:  477,29 | Max:  973 | SD: 70,01
+
+--- Expected Value (EV) Analysis by Roll ---
+[Yahtzee]
+   Roll 1  : EV Success:  577,92 (n=394   ) | EV Sacrifice:  500,52 (n=73287 )
+   Roll 2  : EV Success:  591,01 (n=5402  ) | EV Sacrifice:  500,52 (n=73287 )
+   Roll 3  : EV Success:  593,58 (n=15085 ) | EV Sacrifice:  500,52 (n=73287 )
+
+[Huge Straight]
+   Roll 1  : EV Success:  534,25 (n=17307 ) | EV Sacrifice:  464,90 (n=6544  )
+   Roll 2  : EV Success:  538,21 (n=28961 ) | EV Sacrifice:  464,90 (n=6544  )
+   Roll 3  : EV Success:  541,79 (n=33447 ) | EV Sacrifice:  464,90 (n=6544  )
+
+[Flush]
+   Roll 1  : EV Success:  567,54 (n=413   ) | EV Sacrifice:  517,25 (n=83057 )
+   Roll 2  : EV Success:  577,03 (n=4622  ) | EV Sacrifice:  517,25 (n=83057 )
+   Roll 3  : EV Success:  578,02 (n=11981 ) | EV Sacrifice:  517,25 (n=83057 )
+
+[Extended Full House]
+   Roll 1  : EV Success:  536,51 (n=12755 ) | EV Sacrifice:  485,15 (n=13777 )
+   Roll 2  : EV Success:  541,19 (n=29070 ) | EV Sacrifice:  485,15 (n=13777 )
+   Roll 3  : EV Success:  543,96 (n=33157 ) | EV Sacrifice:  485,15 (n=13777 )
+
+[Extended Painted House]
+   Roll 1  : EV Success:  541,02 (n=15254 ) | EV Sacrifice:  494,52 (n=17793 )
+   Roll 2  : EV Success:  542,57 (n=28999 ) | EV Sacrifice:  494,52 (n=17793 )
+   Roll 3  : EV Success:  544,27 (n=29064 ) | EV Sacrifice:  494,52 (n=17793 )
+
+--- Subsequent Yahtzee (Joker) Pursuit ---
+   EV with Bonuses:  713,85 (n=10755 ) vs EV without:  518,99 (n=109245)
+
+--- Validation of Optimized Strategy ---
+Optimized Strategy Mean: 554,05
+Baseline Strategies Mean: 532,94
+Improvement: +21,11 points (3,96%)
+
+--- Final Decision Matrix (Roll-Specific) ---
+Condition                                         | Action                   
+--------------------------------------------------|------------------------
+5 of a Kind (Roll 1) [Risk of Zero]               | Pursue Yahtzee           
+5 of a Kind (Roll 2) [Risk of Zero]               | Pursue Yahtzee           
+Large Straight (Roll 1) [Risk of Zero]            | Pivot to Other Category  
+Large Straight (Roll 2) [Risk of Zero]            | Pivot to Other Category  
+5 of a Color (Roll 1) [Risk of Zero]              | Pursue Flush             
+5 of a Color (Roll 2) [Risk of Zero]              | Pursue Flush             
+Ext. Full House (Roll 1) [Yahtzee Unfilled]       | INSUFFICIENT DATA        
+Ext. Full House (Roll 1) [Yahtzee Filled]         | Keep Ext. FH             
+Ext. Painted House (Roll 1)                       | Keep Ext. PH             
+
+============================================================
+   REPORT GENERATED ON: Thu 2026 Apr 23 17:13:21 EEST
+============================================================
