@@ -1,6 +1,6 @@
 ## GameEngineOptimizer
 
-**GameEngineOptimizer** is a specialized **Decision Engine** designed to identify and validate the most effective strategies for the game SixDiceColorYahtzee. 
+**GameEngineOptimizer** is a specialized **Decision Engine** designed to identify and validate the most effective strategies for the game [SixDiceColorYahtzee](https://github.com/samikump/SixDiceColorYahtzee). 
 
 Because the game's decision-making search space is too large for a brute-force approach, this engine uses Java to solve the optimization problem through large-scale simulation and statistical weighting.
 <br />
