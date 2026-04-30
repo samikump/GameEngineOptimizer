@@ -46,3 +46,6 @@ The optimization process follows a rigorous four-step pipeline:
 2. Rename the dbconfig.properties.example file as dbconfig.properties and edit it by replacing yourPasswordHere with the root password of your MySQL database.
 3. Build the project using Maven.
 4. Run the GameEngineOptimizer class to begin the simulation and generate the report.
+
+
+TODO: Fix the INSUFFICIENT data in the Final Decision Matrix
